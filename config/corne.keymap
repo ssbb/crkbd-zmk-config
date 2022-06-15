@@ -37,23 +37,23 @@
 
                 ext_layer {
                         bindings = <
-   &none &kc ESC   &kc LG(LS(LBKT)) &kc LG(F) &kc LG(LS(RBKT)) &kc LG(B)    &kc PG_UP    &kc HOME &kc UP   &kc END   &kc CAPS &none
-   &none &sk LALT  &sk LGUI         &sk LSHFT &sk LCTRL        &kc LC(G)    &kc PG_DN    &kc LEFT &kc DOWN &kc RIGHT &kc DEL  &none
-   &none &kc LG(Z) &kc LG(X)        &kc LG(C) &kc TAB          &KC LG(V)    &kc LA(BSPC) &kc BSPC &none    &none     &none    &none
-                                    &none     &trans           &trans       &kc RET      &trans   &none
+   &none &kp ESC   &kp LG(LS(LBKT)) &kp LG(F) &kp LG(LS(RBKT)) &kp LG(B)    &kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS &none
+   &none &sk LALT  &sk LGUI         &sk LSHFT &sk LCTRL        &kp LC(G)    &kp PG_DN    &kp LEFT &kp DOWN &kp RIGHT &kp DEL  &none
+   &none &kp LG(Z) &kp LG(X)        &kp LG(C) &kp TAB          &kp LG(V)    &kp LA(BSPC) &kp BSPC &none    &none     &none    &none
+                                    &none     &trans           &trans       &kp RET      &trans   &none
                         >;
                 };
 
                 sym_layer {
                         bindings = <
-   &none &kc EXCL  &kc AT    &kc HASH &kc COLON &kc SEMI   &kc EQUAL &kc N4 &kc N5 &kc N6 &kc PLUS  &none
-   &none &kc BSLH  &kc PRCNT &kc LBRC &kc LPAR  &kc LBKT   &kc N0    &kc N1 &kc N2 &kc N3 &kc MINUS &none
-   &none &kc GRAVE &kc UNDER &kc RBRC &kc RPAR  &kc RBKT   &kc STAR  &kc N7 &kc N8 &kc N9 &kc FSLH  &none
-                     &trans &tsans &trans   &trans &trans &trans
+   &none &kp EXCL  &kp AT    &kp HASH &kp COLON &kp SEMI   &kp EQUAL &kp N4 &kp N5 &kp N6 &kp PLUS  &none
+   &none &kp BSLH  &kp PRCNT &kp LBRC &kp LPAR  &kp LBKT   &kp N0    &kp N1 &kp N2 &kp N3 &kp MINUS &none
+   &none &kp GRAVE &kp UNDER &kp RBRC &kp RPAR  &kp RBKT   &kp STAR  &kp N7 &kp N8 &kp N9 &kp FSLH  &none
+                                    &trans &tsans &trans   &trans &trans &trans
                         >;
                 };
 
-                ext_layer {
+                fun_layer {
                         bindings = <
    &none &none &none &none &none             &none    &none &none &none &none &none &none
    &none &none &none &none &ext_power EP_TOG &none    &none &none &none &none &none &none
