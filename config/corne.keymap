@@ -24,7 +24,7 @@
                         bindings
                                 = <&macro_press &kp LGUI>
                                 , <&tog QWE>
-                                , <&macro_pat SPACE>
+                                , <&macro_tap SPACE>
                                 , <&macro_release &kp LGUI>
                                 ;
                 };
