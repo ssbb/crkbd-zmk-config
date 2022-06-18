@@ -21,6 +21,7 @@
                 lang_switch: lang_switch {
                         label = "Language toggle";
                         compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
                         bindings
                                 = <&macro_press &kp LGUI>
                                 , <&tog QWE>
