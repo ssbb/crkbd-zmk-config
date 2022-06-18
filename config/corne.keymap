@@ -17,6 +17,16 @@
 #define FUN 4
 
 / {
+        behaviors {
+                ru_e: ru_e {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "Russian Ё";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp T>, <&kp BSLH>;
+                };
+        };
+
         macros {
                 lang_switch: lang_switch {
                         label = "Language toggle";
@@ -55,8 +65,8 @@
 
                 qwerty_layer {
                         bindings = <
-   &none &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &none
-   &none &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SQT  &none
+   &none &kp Q &kp W &kp E &kp R &ru_e    &kp Y &kp U  &kp I     &kp O   &kp P    &none
+   &none &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SEMI  &none
    &none &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
                    &none &trans &trans    &trans &trans &none
                         >;
