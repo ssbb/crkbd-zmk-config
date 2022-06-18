@@ -22,17 +22,41 @@
                         compatible = "zmk,behavior-tap-dance";
                         label = "Caps Word / Caps Lock";
                         #binding-cells = <0>;
-                        tapping-term-ms = <200>;
+                        tapping-term-ms = <150>;
                         bindings = <&caps_word>, <&kp CAPS>;
                 };
 
-
-                ru_e: ru_e {
+                ru_e: ru_ee {
                         compatible = "zmk,behavior-tap-dance";
                         label = "Russian Ё";
                         #binding-cells = <0>;
-                        tapping-term-ms = <200>;
+                        tapping-term-ms = <150>;
                         bindings = <&kp T>, <&kp BSLH>;
+                };
+
+                ru_e: ru_bb {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "Russian Ъ";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <150>;
+                        bindings = <&kp M>, <&kp RBKT>;
+                };
+
+                ru_x: ru_zx {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "Russian Х";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <150>;
+                        bindings = <&kp P>, <&kp LBKT>;
+                };
+
+
+                ru_x: ru_zhe {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "Russian Х";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <150>;
+                        bindings = <&kp SEMI>, <&kp SQT>;
                 };
         };
 
