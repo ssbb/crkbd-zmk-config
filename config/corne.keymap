@@ -28,7 +28,7 @@
 
                 ru_ee: ru_ee {
                         compatible = "zmk,behavior-tap-dance";
-                        label = "Russian Ё";
+                        label = "Russian Е / Ё";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&kp T>, <&kp BSLH>;
@@ -36,7 +36,7 @@
 
                 ru_bb: ru_bb {
                         compatible = "zmk,behavior-tap-dance";
-                        label = "Russian Ъ";
+                        label = "Russian Ь / Ъ";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&kp M>, <&kp RBKT>;
@@ -44,16 +44,15 @@
 
                 ru_zx: ru_zx {
                         compatible = "zmk,behavior-tap-dance";
-                        label = "Russian Х";
+                        label = "Russian З / Х";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&kp P>, <&kp LBKT>;
                 };
 
-
                 ru_zhe: ru_zhe {
                         compatible = "zmk,behavior-tap-dance";
-                        label = "Russian Х";
+                        label = "Russian Ж / Э";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&kp SEMI>, <&kp SQT>;
