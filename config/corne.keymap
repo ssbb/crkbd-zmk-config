@@ -24,7 +24,6 @@
                         #binding-cells = <0>;
                         bindings
                                 = <&macro_press &kp LGUI>
-                                , <&tog QWE>
                                 , <&macro_tap SPACE>
                                 , <&macro_release &kp LGUI>
                                 ;
