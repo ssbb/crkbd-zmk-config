@@ -26,7 +26,7 @@
                         bindings = <&caps_word>, <&kp CAPS>;
                 };
 
-                ru_e: ru_ee {
+                ru_ee: ru_ee {
                         compatible = "zmk,behavior-tap-dance";
                         label = "Russian Ё";
                         #binding-cells = <0>;
@@ -34,7 +34,7 @@
                         bindings = <&kp T>, <&kp BSLH>;
                 };
 
-                ru_e: ru_bb {
+                ru_bb: ru_bb {
                         compatible = "zmk,behavior-tap-dance";
                         label = "Russian Ъ";
                         #binding-cells = <0>;
@@ -42,7 +42,7 @@
                         bindings = <&kp M>, <&kp RBKT>;
                 };
 
-                ru_x: ru_zx {
+                ru_zx: ru_zx {
                         compatible = "zmk,behavior-tap-dance";
                         label = "Russian Х";
                         #binding-cells = <0>;
@@ -51,7 +51,7 @@
                 };
 
 
-                ru_x: ru_zhe {
+                ru_zhe: ru_zhe {
                         compatible = "zmk,behavior-tap-dance";
                         label = "Russian Х";
                         #binding-cells = <0>;
@@ -98,10 +98,10 @@
 
                 qwerty_layer {
                         bindings = <
-   &none &kp Q &kp W &kp E &kp R &ru_e    &kp Y &kp U  &kp I     &kp O   &kp P    &none
-   &none &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SEMI  &none
-   &none &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
-                   &none &trans &trans    &trans &trans &none
+   &none &kp Q &kp W &kp E &kp R &ru_ee    &kp Y &kp U  &kp I     &kp O   &ru_zx   &none
+   &none &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &ru_zhe  &none
+   &none &kp Z &kp X &kp C &kp V &kp B     &kp N &ru_bb &kp COMMA &kp DOT &kp FSLH &none
+                   &none &trans &trans     &trans &trans &none
                         >;
                 };
 
