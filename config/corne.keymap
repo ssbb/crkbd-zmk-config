@@ -11,16 +11,30 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BAS 0
-#define EXT 1
-#define SYM 2
-#define FUN 3
+#define QWE 1
+#define EXT 2
+#define SYM 3
+#define FUN 4
 
 / {
+        macros {
+                lang_switch: lang_switch {
+                        label = "Language toggle";
+                        compatible = "zmk,behavior-macro";
+                        bindings
+                                = <&macro_press &kp LGUI>
+                                , <&tog QWE>
+                                , <&macro_pat SPACE>
+                                , <&macro_release &kp LGUI>
+                                ;
+                };
+        };
+
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 tri_layer {
-                        if-layers = <1 2>;
-                        then-layer = <3>;
+                        if-layers = <2 3>;
+                        then-layer = <4>;
                 };
         };
 
@@ -36,12 +50,22 @@
                         >;
                 };
 
+                qwerty_layer {
+                        bindings = <
+   &none &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &none
+   &none &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SQT  &none
+   &none &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
+                   &none &trans &trans    &trans &trans &none
+                        >;
+                };
+
+
                 ext_layer {
                         bindings = <
-   &none &gresc    &kp LG(LS(LBKT)) &kp LG(F) &kp LG(LS(RBKT)) &kp LG(B)    &kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS &none
-   &none &sk LALT  &sk LGUI         &sk LSHFT &sk LCTRL        &kp LC(G)    &kp PG_DN    &kp LEFT &kp DOWN &kp RIGHT &kp DEL  &none
-   &none &kp LG(Z) &kp LG(X)        &kp LG(C) &kp TAB          &kp LG(V)    &kp LA(BSPC) &kp BSPC &none    &none     &none    &none
-                                    &none     &trans           &trans       &kp RET      &trans   &none
+   &none &gresc    &kp LG(LS(LBKT)) &kp LG(F) &kp LG(LS(RBKT)) &kp LG(B)             &kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS &none
+   &none &sk LALT  &sk LGUI         &sk LSHFT &sk LCTRL        &kp <&lang_switch>    &kp PG_DN    &kp LEFT &kp DOWN &kp RIGHT &kp DEL  &none
+   &none &kp LG(Z) &kp LG(X)        &kp LG(C) &kp TAB          &kp LG(V)             &kp LA(BSPC) &kp BSPC &none    &none     &none    &none
+                                    &none     &trans           &trans                &kp RET      &trans   &none
                         >;
                 };
 
