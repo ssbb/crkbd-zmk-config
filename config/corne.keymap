@@ -18,6 +18,15 @@
 
 / {
         behaviors {
+                td_caps: td_caps {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "Caps Word / Caps Lock";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&caps_word>, <&kp CAPS>;
+                };
+
+
                 ru_e: ru_e {
                         compatible = "zmk,behavior-tap-dance";
                         label = "Russian Ё";
@@ -75,7 +84,7 @@
 
                 ext_layer {
                         bindings = <
-   &none &gresc    &kp LG(LS(LBKT)) &kp LG(F) &kp LG(LS(RBKT)) &kp LG(B)       &kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS &none
+   &none &gresc    &kp LG(LS(LBKT)) &kp LG(F) &kp LG(LS(RBKT)) &kp LG(B)       &kp PG_UP    &kp HOME &kp UP   &kp END   &td_caps &none
    &none &sk LALT  &sk LGUI         &sk LSHFT &sk LCTRL        &lang_switch    &kp PG_DN    &kp LEFT &kp DOWN &kp RIGHT &kp DEL  &none
    &none &kp LG(Z) &kp LG(X)        &kp LG(C) &kp TAB          &kp LG(V)       &kp LA(BSPC) &kp BSPC &none    &none     &none    &none
                                     &none     &trans           &trans          &kp RET      &trans   &none
