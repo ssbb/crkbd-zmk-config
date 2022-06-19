@@ -81,9 +81,9 @@
 
                 russian_layer {
                         bindings = <
-   &none &kp Z &kp D &kp A &kp G &kp COMMA      &kp Q &kp K &kp E  &kp S  &kp DOT &none
+   &none &kp Z &kp SEMI &kp A &kp G &kp COMMA   &kp Q &kp K &kp E  &kp S  &kp DOT &none
    &none &kp F &kp H    &kp C &kp N &kp U       &kp V &kp Y &kp T  &kp B  &kp J   &none
-   &none &kp P &kp LBKT &kp W &kp L &kp SEMI    &kp R &kp X &ru_bb &ru_sh &kp SQT &none
+   &none &kp P &kp LBKT &kp W &kp L &kp D       &kp R &kp X &ru_bb &ru_sh &kp SQT &none
                         &none &trans &trans     &trans &trans &none
                         >;
                 };
