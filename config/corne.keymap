@@ -31,7 +31,7 @@
                         label = "Russian Ь / Ъ";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&kp M>, <&kp RBKT>;
+                        bindings = <&kp M>, <&kp RBKT>, <&kp KP_COMMA>;
                 };
 
                 ru_sh: ru_sh {
@@ -39,7 +39,7 @@
                         label = "Russian Ш / Щ";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&kp I>, <&kp O>;
+                        bindings = <&kp I>, <&kp O>, <&kp KP_DOT>;
                 };
         };
 
