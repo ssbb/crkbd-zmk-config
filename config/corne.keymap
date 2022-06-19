@@ -34,14 +34,6 @@
                         bindings = <&kp T>, <&kp BSLH>;
                 };
 
-                ru_ij: ru_ij {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "Russian И / Й";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp B>, <&kp Q>, <&kp B &kp B>;
-                };
-
                 ru_bb: ru_bb {
                         compatible = "zmk,behavior-tap-dance";
                         label = "Russian Ь / Ъ";
@@ -97,9 +89,9 @@
 
                 russian_layer {
                         bindings = <
-   &none &kp Z &kp SEMI &kp A &kp G &kp COMMA     &kp Q &kp K &kp E  &kp S  &kp SQT  &none
-   &none &kp F &kp H    &kp C &kp N &kp U         &kp V &kp Y &ru_ee &ru_ij &kp J    &none
-   &none &kp P &kp LBKT &kp W &kp L &kp D         &kp R &kp X &kp Z  &kp M  &kp RBKT &none
+   &none &kp Z &kp SEMI &kp A &kp G &kp COMMA     &kp Q &kp K &kp E  &kp S   &kp SQT &none
+   &none &kp F &kp H    &kp C &kp N &kp U         &kp V &kp Y &ru_ee &kp B   &kp J   &none
+   &none &kp P &kp LBKT &kp W &kp L &kp D         &kp R &kp X &ru_bb &kp DOT &ru_sh  &none
                         &none &trans &trans       &trans &trans &none
                         >;
                 };
